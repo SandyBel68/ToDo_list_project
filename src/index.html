@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-  <head>
-    <title>HTML + JS boilerplate project</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  <body>
-    <div>Hello, world</div>
-  </body>
+<head>
+  <title>HTML + JS boilerplate project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="container">
+  <h2>TODO List</h2>
+  <p>
+  <input type="text" id="search" placeholder="Search for names..">
+  </p><br>
+  <p>
+    <label for="new-task">Add Item</label><input id="new-task" type="text"><button class="add">Add</button>
+  </p>
+
+  <h3>Open</h3>
+  <select id="Sort-incomplete" >
+    <option selected disabled>Choose way of sorting...
+    <option value="SortAsc"> Name SortAsc
+    <option value="SortDesc">Name SortDesc
+  </select><br>
+  <ul id="incomplete-tasks">
+  </ul>
+  <input id="clearOpen" value="Clear open" type="button">
+
+  <h3>Done</h3>
+  <select id="Sort-complete" >
+    <option selected disabled>Choose way of sorting...
+    <option value="SortAsc"> Name SortAsc
+    <option value="SortDesc">Name SortDesc
+  </select><br>
+  <ul id="completed-tasks">
+  </ul>
+  <input id="clearDone" value="Clear done" type="button">
+</div>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
 </html>
